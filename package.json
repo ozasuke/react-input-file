@@ -2,9 +2,10 @@
   "name": "react-input-file",
   "version": "0.2.6",
   "description": "Simple file input component for React",
-  "main": "./lib",
+  "main": "./build",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,13 +19,28 @@
     "input"
   ],
   "author": "Captivation Software",
-  "contributors": ["Data-Meister", "Andi Neck"],
+  "contributors": [
+    "Data-Meister",
+    "Andi Neck"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/intesso/react-input-file/issues"
   },
   "homepage": "https://github.com/intesso/react-input-file",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "webpack": "^2.6.1"
+  },
   "peerDependencies": {
-    "react": "0.x || 15.x"
+    "react": "0.x || 15.x || 16.x"
+  },
+  "dependencies": {
+    "react": "^16.2.0"
   }
 }
